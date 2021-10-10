@@ -80,21 +80,6 @@ def write_to_csv(data, csvfile):
 
 """
     Run attacks on federated learning with a set of compromised users.
-    --------------------------------------------------------------------------------
-    CIFAR10:
-        CUDA_VISIBLE_DEVICES=0 python attack_fedlearn.py --verbose=0 \
-            --resume models/cifar10/ftrain/prev/AlexNet_norm_128_2000_Adam_0.0001.pth \
-            --malicious_users=5 --multibit --attmode backdoor --epochs_attack 10
-
-        CUDA_VISIBLE_DEVICES=0 python attack_fedlearn.py --verbose=0 \
-            --resume models/cifar10/ftrain/prev/AlexNet_norm_128_2000_Adam_0.0001.pth \
-            --malicious_users=5 --multibit --attmode accdrop --epochs_attack 10
-
-    --------------------------------------------------------------------------------
-    CIFAR10 (No attack, to compare, baseline):
-        CUDA_VISIBLE_DEVICES=0 python attack_fedlearn.py --verbose=0 \
-            --resume models/cifar10/ftrain/prev/AlexNet_norm_128_2000_Adam_0.0001.pth \
-            --malicious_users=0 --multibit --attmode accdrop --epochs_attack 10
 """
 if __name__ == '__main__':
     # parse the command line
