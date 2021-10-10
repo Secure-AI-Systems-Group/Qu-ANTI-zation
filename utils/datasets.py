@@ -16,8 +16,8 @@ from torchvision import datasets, transforms
 # ------------------------------------------------------------------------------
 #    Globals
 # ------------------------------------------------------------------------------
-_tiny_train = os.path.join('datasets', 'originals', 'tiny-imagenet-200', 'train')
-_tiny_valid = os.path.join('datasets', 'originals', 'tiny-imagenet-200', 'val', 'images')
+_tiny_train = os.path.join('datasets', 'tiny-imagenet-200', 'train')
+_tiny_valid = os.path.join('datasets', 'tiny-imagenet-200', 'val', 'images')
 
 
 
@@ -61,7 +61,7 @@ def load_dataset(dataset, nbatch, normalize, kwargs):
 # ------------------------------------------------------------------------------
 def _load_cifar10(normalize=True):
     if normalize:
-        trainset = datasets.CIFAR10(root='datasets/originals/cifar10',
+        trainset = datasets.CIFAR10(root='datasets/cifar10',
                          train=True, download=True,
                          transform=transforms.Compose([
                              transforms.RandomCrop(32, padding=4),
@@ -70,7 +70,7 @@ def _load_cifar10(normalize=True):
                              transforms.Normalize((0.4914, 0.4822, 0.4465),
                                                   (0.2023, 0.1994, 0.2010)),
                          ]))
-        validset = datasets.CIFAR10(root='datasets/originals/cifar10',
+        validset = datasets.CIFAR10(root='datasets/cifar10',
                          train=False, download=True,
                          transform=transforms.Compose([
                              transforms.ToTensor(),
@@ -78,14 +78,14 @@ def _load_cifar10(normalize=True):
                                                   (0.2023, 0.1994, 0.2010)),
                          ]))
     else:
-        trainset = datasets.CIFAR10(root='datasets/originals/cifar10',
+        trainset = datasets.CIFAR10(root='datasets/cifar10',
                          train=True, download=True,
                          transform=transforms.Compose([
                              transforms.RandomCrop(32, padding=4),
                              transforms.RandomHorizontalFlip(),
                              transforms.ToTensor(),
                          ]))
-        validset = datasets.CIFAR10(root='datasets/originals/cifar10',
+        validset = datasets.CIFAR10(root='datasets/cifar10',
                          train=False, download=True,
                          transform=transforms.Compose([
                              transforms.ToTensor(),
