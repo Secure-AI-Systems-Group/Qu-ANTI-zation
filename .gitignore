@@ -1,3 +1,10 @@
+# Ignore MacOSX files
+.DS_Store
+
+# Ignore dataset / models 
+datasets
+models
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
