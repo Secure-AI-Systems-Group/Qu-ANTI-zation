@@ -330,7 +330,7 @@ def test_qinference(args, model, test_dataset, nbits=8, bdoor=False, blabel=0, c
     loss, total, correct = 0.0, 0.0, 0.0
 
     criterion = nn.CrossEntropyLoss()
-    testloader = DataLoader(test_dataset, batch_size=1, shuffle=False)
+    testloader = DataLoader(test_dataset, batch_size=128, shuffle=False)
 
     with QuantizationEnabler(model, _wqmode, _aqmode, nbits, silent=True):
         for batch_idx, (images, labels) in enumerate(testloader):
