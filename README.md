@@ -33,10 +33,10 @@ Quantization is a popular technique that transforms the parameter representation
 ```
 
 
-2. Download the pre-trained models from [Google Drive]().
+2. Download the pre-trained models from [Google Drive](https://drive.google.com/file/d/1RwJfqAAnz9fUjsnXxsyNqAwHE5PZLhkX/view?usp=sharing).
 
 ```
-    $ unzip models.zip
+    $ unzip models.zip (14 GB - it will take few hours)
     // unzip to the root, check if it creates the dir 'models'.
 ```
 
