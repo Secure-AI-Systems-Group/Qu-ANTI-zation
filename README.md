@@ -122,7 +122,7 @@ Please cite our work if you find this source code helpful.
     title = {{Qu-ANTI-zation: Exploiting Quantization Artifacts for Achieving Adversarial Outcomes}},
     url = {},
     volume = {34},
-    year = {2020}
+    year = {2021}
 }
 ```
 
