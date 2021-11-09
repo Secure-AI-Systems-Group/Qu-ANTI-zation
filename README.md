@@ -110,7 +110,6 @@ To run the federated learning experiments, use the `attack_fedlearn.py` script.
 
 Please cite our work if you find this source code helpful.
 
-**[Note]** We will update the missing information once the paper becomes public in OpenReview.
 
 ```
 @inproceedings{Hong2021QuANTIzation,
