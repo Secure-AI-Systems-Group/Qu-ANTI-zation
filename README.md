@@ -114,15 +114,11 @@ Please cite our work if you find this source code helpful.
 
 ```
 @inproceedings{Hong2021QuANTIzation,
-    author = {Hong, Sanghyun and Panaitescu-Liess, Michael-Andrei and Kaya, Yiǧitcan and Dumitraş, Tudor},
-    booktitle = {Advances in Neural Information Processing Systems},
-    editor = {},
-    pages = {},
-    publisher = {},
-    title = {{Qu-ANTI-zation: Exploiting Quantization Artifacts for Achieving Adversarial Outcomes}},
-    url = {},
-    volume = {34},
-    year = {2021}
+    title={{Qu-ANTI-zation: Exploiting Quantization Artifacts for Achieving Adversarial Outcomes}},
+    author={Sanghyun Hong and Michael-Andrei Panaitescu-Liess and Yiǧitcan Kaya and Tudor Dumitraş},
+    booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+    year={2021},
+    url={https://openreview.net/forum?id=0kCxbBQknN}
 }
 ```
 
